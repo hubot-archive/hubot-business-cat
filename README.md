@@ -1,4 +1,3 @@
-hubot-business-cat
-==================
+# hubot-business-cat
 
 Displays business cat graphic
