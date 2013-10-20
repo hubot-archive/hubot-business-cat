@@ -1,3 +1,4 @@
-# hubot-business-cat
+# Hubot: Business Cat
+## It's business time!
 
-Displays business cat graphic
+Business cat is summoned when business jargon is used
