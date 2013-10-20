@@ -1,0 +1,39 @@
+{
+  "name": "hubot-business-cat",
+  "version": "1.0.0",
+  "description": "Business cat appears when business jargon is used",
+  "main": "index.coffee",
+  "author": {
+    "name": "Morgan Wigmanich",
+    "email": "okize123@gmail.com",
+    "url": "https://github.com/okize"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "business",
+    "jargon",
+    "cat"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "script/test"
+  },
+  "homepage": "https://github.com/okize/hubot-business-cat/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okize/hubot-business-cat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/okize/hubot-business-cat/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*"
+  },
+}
