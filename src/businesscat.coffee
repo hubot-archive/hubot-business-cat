@@ -12,8 +12,8 @@ jargon = [
   'all hands on deck',
   'at the end of the day',
   'best of breed',
-  'best practice|s',
-  'big|ger picture',
+  'best practice(|s)',
+  'big(|ger) picture',
   'bleeding edge',
   'blue sky thinking',
   'boil the ocean',
@@ -44,8 +44,8 @@ jargon = [
   'make hay',
   'move the goal posts',
   'move the needle',
-  'on my|your plate',
-  'on my|your radar',
+  'on (my|your) plate',
+  'on (my|your) radar',
   'out of the loop',
   'outside the box',
   'paradigm',
@@ -60,7 +60,7 @@ jargon = [
   'rock star',
   'rubber hits the road',
   'siwm lane',
-  'strategic *',
+  'strategic .*?',
   'synergy',
   'take it offline',
   'team building',
@@ -68,8 +68,8 @@ jargon = [
   'total quality',
   'touch base',
   'touch points',
-  'touch|ing base',
-  'value add|ed',
+  'touch(|ing) base',
+  'value add(|ed)',
   'value proposition'
 ]
 
@@ -77,6 +77,8 @@ images = [
   'http://i3.kym-cdn.com/photos/images/original/000/100/100/Something-a-boss-does-Something-a-cat-does.jpg'
 ]
 
+regex = new RegExp jargon.join('|'), 'ig'
+
 module.exports = (robot) ->
-  robot.hear /synergy/i, (msg) ->
+  robot.hear regex, (msg) ->
     msg.send msg.random images
