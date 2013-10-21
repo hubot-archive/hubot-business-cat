@@ -1,11 +1,11 @@
-chai = require "chai"
-sinon = require "sinon"
-chai.use require "sinon-chai"
+chai = require 'chai'
+sinon = require 'sinon'
+chai.use require 'sinon-chai'
 
 expect = chai.expect
 
-describe "Business Cat!", ->
-  businesscat_module = require("../src/businesscat")
+describe 'Business Cat:', ->
+  businesscat_module = require('../src/businesscat')
 
   beforeEach ->
     @robot =
@@ -16,13 +16,12 @@ describe "Business Cat!", ->
       random: sinon.spy()
     @businesscat_module = businesscat_module(@robot)
 
-  describe "Summon business cat", ->
+  describe 'summon a business cat', ->
 
-    it 'registers a hear listener', ->
+    it 'should register a hear listener', ->
       expect(@robot.hear).to.have.been.calledWith(/we should create a strategic partnership/)
 
-    it 'registers a hear listener', ->
-      expect(@robot.hear).to.have.been.calledWith(/we should forge a new paradigm/)
-
-    it 'registers a hear listener', ->
-      expect(@robot.hear).to.have.been.calledWith(/you should see the bigger picture/)
+    # it 'should return an image url', ->
+    #   cb = @robot.respond.firstCall.args[1]
+    #   cb(@msg)
+    #   expect(@msg.send).to.have.been.calledWithMatch(/*.jpg/)
