@@ -1,11 +1,25 @@
 # Description:
 #   Business cat is summoned when business jargon is used
 #
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
 # Commands:
-#   [business jargon] - Returns an image of business cat (* see jargon array for list of trigger phrases)
+#   business jargon - summons business cat
+#
+# Notes
+#   See jargon array for list of trigger phrases
 #
 # Author:
-#   Morgan Wigmanich (okize)
+#   Morgan Wigmanich <okize123@gmail.com> (https://github.com/okize)
+
+module.exports = (robot) ->
+
+  robot.hear regex, (msg) ->
+    msg.send msg.random images
 
 jargon = [
   'action items',
@@ -78,7 +92,3 @@ images = [
 ]
 
 regex = new RegExp jargon.join('|'), 'ig'
-
-module.exports = (robot) ->
-  robot.hear regex, (msg) ->
-    msg.send msg.random images
