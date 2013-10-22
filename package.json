@@ -1,6 +1,6 @@
 {
   "name": "hubot-business-cat",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Business cat is summoned when business jargon is used",
   "main": "index.coffee",
   "author": {
