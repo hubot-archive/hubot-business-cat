@@ -54,6 +54,7 @@ jargon = [
   'hit the ground running',
   'hold the fort',
   'key takeaways',
+  'leverage',
   'low hanging fruit',
   'make hay',
   'move the goal posts',
