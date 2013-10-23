@@ -21,6 +21,9 @@ describe 'Business Cat:', ->
     it 'should register a hear listener', ->
       expect(@robot.hear).to.have.been.calledWith(/we should create a strategic partnership/)
 
+    # it 'should NOT register a hear listener', ->
+    #   expect(@robot.hear).not.to.have.been.calledWith(/cooper seem/)
+
     # it 'should return an image url', ->
     #   cb = @robot.respond.firstCall.args[1]
     #   cb(@msg)
