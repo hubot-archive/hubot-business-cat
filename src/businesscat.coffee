@@ -17,7 +17,6 @@
 #   Morgan Wigmanich <okize123@gmail.com> (https://github.com/okize)
 
 module.exports = (robot) ->
-
   robot.hear regex, (msg) ->
     msg.send msg.random images
 
@@ -65,7 +64,7 @@ jargon =
   'outside\sthe\sbox',
   'paradigm',
   'peel\sthe\sonion',
-  'per\sse',
+  '\Wper\sse\W',
   'ping\sme',
   'point\sof\scontact',
   'price\spoint',
