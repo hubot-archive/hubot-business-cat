@@ -20,7 +20,7 @@ module.exports = (robot) ->
   robot.hear regex, (msg) ->
     msg.send msg.random images
 
-jargon =
+jargon = [
   'action\sitems',
   'all\shands\son\sdeck',
   'at\sthe\send\sof\sthe\sday',
@@ -49,7 +49,6 @@ jargon =
   'go\sthe\sextra\smile',
   'guru',
   'hard\sstop',
-  'heavy\slifting',
   'hit\sthe\sground\srunning',
   'hold\sthe\sfort',
   'key\stakeaways',
@@ -64,8 +63,8 @@ jargon =
   'outside\sthe\sbox',
   'paradigm',
   'peel\sthe\sonion',
-  '\Wper\sse\W',
-  'ping\sme',
+  '(\W|^)per\sse(\W|$)',
+  '(\W|^)ping\me(\W|$)',
   'point\sof\scontact',
   'price\spoint',
   'proactive',
@@ -85,8 +84,9 @@ jargon =
   'touch(|ing)\sbase',
   'value\sadd(|ed)',
   'value\sproposition'
+]
 
-images =
+images = [
   'http://imgur.com/PaGjotI.jpg',
   'http://imgur.com/HNp4TtH.jpg',
   'http://imgur.com/tMYclqT.jpg',
@@ -130,5 +130,6 @@ images =
   'http://imgur.com/X6XF5OW.jpg',
   'http://imgur.com/QyCmPGg.jpg',
   'http://imgur.com/69xwU1q.jpg'
+]
 
 regex = new RegExp jargon.join('|'), 'ig'
