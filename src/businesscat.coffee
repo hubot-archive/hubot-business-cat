@@ -61,7 +61,7 @@ jargon = [
   'on (my|your) plate',
   'on (my|your) radar',
   'out of the loop',
-  'outside the box',
+  'out(side|\\\sof) the box',
   'paradigm',
   'peel the onion',
   '(\\\W|^)per se(\\\W|$)',
