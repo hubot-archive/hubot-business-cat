@@ -9,14 +9,14 @@ Business cat is summoned when business jargon is used
 
 Add the package `hubot-business-cat` as a dependency in your Hubot `package.json` file.
 
-  "dependencies": {
-    "hubot-business-cat": "1.0.x"
-  }
+    "dependencies": {
+      "hubot-business-cat": "1.0.x"
+    }
 
 Run the following command to make sure the module is installed.
 
- $ npm install hubot-business-cat
+    $ npm install hubot-business-cat
 
 To enable the script, add the `hubot-business-cat` entry to the `external-scripts.json` file (you may need to create this file).
 
- ["hubot-business-cat"]
+    ["hubot-business-cat"]
