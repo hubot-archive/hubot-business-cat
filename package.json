@@ -28,7 +28,7 @@
     "url": "https://github.com/okize/hubot-business-cat/issues"
   },
   "dependencies": {
-    "hubot": ">= 2.4.0",
+    "hubot": ">= 2.4.3",
     "coffee-script": "~1.6"
   },
   "devDependencies": {
