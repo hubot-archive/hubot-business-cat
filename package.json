@@ -1,7 +1,7 @@
 {
   "name": "hubot-business-cat",
-  "version": "1.0.13",
-  "description": "Business cat is summoned when business jargon is used",
+  "version": "1.0.14",
+  "description": "Hubot script that displays business cat images",
   "main": "index.coffee",
   "author": {
     "name": "Morgan Wigmanich",
