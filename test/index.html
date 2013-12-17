@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Business Cat Image List</title>
+  <title>Hubot Script Image List</title>
   <link href="https://raw.github.com/necolas/normalize.css/master/normalize.css" media="all" rel="stylesheet" type="text/css" />
   <style>
     *, *:before, *:after {
@@ -49,7 +49,7 @@
             html;
 
         $.getJSON('images.json', function(data) {
-          header.append(data.length + ' business cat images')
+          header.append(data.length + ' images')
           $.each(data, function(i, src) {
             html = '<li><img src="' + src + '" /></li>'
             list.append(html);
