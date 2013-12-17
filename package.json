@@ -1,7 +1,7 @@
 {
   "name": "hubot-business-cat",
   "version": "1.0.15",
-  "description": "Hubot script that displays business cat images",
+  "description": "Hubot script that displays `business cat` images",
   "main": "index.coffee",
   "author": {
     "name": "Morgan Wigmanich",
@@ -28,7 +28,6 @@
     "url": "https://github.com/okize/hubot-business-cat/issues"
   },
   "dependencies": {
-    "hubot": ">= 2.4.3",
     "coffee-script": "~1.6"
   },
   "devDependencies": {
