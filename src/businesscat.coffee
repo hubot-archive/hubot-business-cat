@@ -20,7 +20,7 @@ module.exports = (robot) ->
   robot.hear regex, (msg) ->
     msg.send msg.random images
 
-images = require 'images.json'
+images = require './images.json'
 
 jargon = [
   'action items',
