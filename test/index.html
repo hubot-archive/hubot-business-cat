@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Business Cat Image List</title>
+  <link href="https://raw.github.com/necolas/normalize.css/master/normalize.css" media="all" rel="stylesheet" type="text/css" />
+  <style>
+    *, *:before, *:after {
+      -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    }
+    body {
+      background-color: #000;
+      font-family: verdana, sans-serif;
+      margin: 0;
+      padding: 10px;
+    }
+    h1 {
+      padding: 10px;
+      margin: 0;
+      color: #fff;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      float: left;
+      padding: 10px;
+    }
+    img {
+      height: 200px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+    <h1 id="header"></h1>
+
+    <ul id="image-list"></ul>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+      $(document).on('ready', function() {
+
+        var list = $('#image-list'),
+            header = $('#header'),
+            html;
+
+        $.getJSON('images.json', function(data) {
+          header.append(data.length + ' business cat images')
+          $.each(data, function(i, src) {
+            html = '<li><img src="' + src + '" /></li>'
+            list.append(html);
+          });
+        });
+
+      });
+    </script>
+</body>
+</html>
