@@ -2,8 +2,9 @@
 
 # Hubot: Business Cat
 
-### *It's business time!*
 Business cat is summoned when business jargon is used
+
+[![It's business time!](https://raw.github.com/okize/hubot-business-cat/gh-pages/animated-business-cat.gif)]
 
 ## Installation
 
@@ -12,6 +13,7 @@ Run the following command to install this module as a Hubot dependency
 ```
 $ npm install hubot-business-cat --save
 ```
+
 
 Confirm that `hubot-business-cat` appears as a dependency in your Hubot `package.json` file.
 
@@ -22,6 +24,7 @@ Confirm that `hubot-business-cat` appears as a dependency in your Hubot `package
   "hubot-business-cat": "1.0.x"
 }
 ```
+
 
 To enable the script, add the `hubot-business-cat` entry to the `external-scripts.json` file (you may need to create this file).
 ```
