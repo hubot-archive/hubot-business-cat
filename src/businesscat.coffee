@@ -50,7 +50,7 @@ jargon = [
   'get on the same page',
   'go the extra mile',
   'guru',
-  'hammer(ing) away',
+  'hammer(|ing) away',
   'hard stop',
   'hit the ground running',
   'hold the fort',
