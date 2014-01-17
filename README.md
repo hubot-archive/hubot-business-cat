@@ -1,10 +1,10 @@
-[![NPM version](https://badge.fury.io/js/hubot-business-cat.png)](http://badge.fury.io/js/hubot-business-cat) [![NPM version](https://david-dm.org/okize/hubot-business-cat.png)](https://david-dm.org/okize/hubot-business-cat) [![Build Status](https://secure.travis-ci.org/okize/hubot-business-cat.png)](http://travis-ci.org/okize/hubot-business-cat)
+![NPM version](https://badge.fury.io/js/hubot-business-cat.png)](http://badge.fury.io/js/hubot-business-cat) ![NPM version](https://david-dm.org/okize/hubot-business-cat.png)](https://david-dm.org/okize/hubot-business-cat) ![Build Status](https://secure.travis-ci.org/okize/hubot-business-cat.png)](http://travis-ci.org/okize/hubot-business-cat)
 
 # Hubot: Business Cat
 
 Business cat is summoned when business jargon is used
 
-[![It's business time!](https://raw.github.com/okize/hubot-business-cat/gh-pages/animated-business-cat.gif)]
+![It's business time!](https://raw.github.com/okize/hubot-business-cat/gh-pages/animated-business-cat.gif)
 
 ## Installation
 
