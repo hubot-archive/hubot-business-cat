@@ -77,7 +77,7 @@ jargon = [
   'rubber hits the road',
   'siwm lane',
   'strategic .*?',
-  'synergy',
+  'synerg(y|ize)',
   'take it offline',
   'team building',
   'team player',
