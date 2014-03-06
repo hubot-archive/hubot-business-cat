@@ -112,4 +112,4 @@ jargon = [
   'value (add|proposition)'
 ]
 
-regex = new RegExp jargon.join('|'), 'ig'
+regex = new RegExp jargon.join('|'), 'gi'
