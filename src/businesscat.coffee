@@ -31,6 +31,7 @@ jargon = [
   'big(|ger) (picture|data)',
   'bleeding edge',
   'blue sky thinking',
+  'blue ocean strategy',
   'boil the ocean',
   'bottom line',
   'brain dump',
