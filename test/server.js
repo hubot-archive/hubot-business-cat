@@ -11,7 +11,7 @@ http.createServer(function(request, response) {
 
   if (uri === '/images.json') {
 
-    var json = require(path.join(process.cwd(), '../src', 'images.json'));
+    var json = require(path.join(process.cwd(), '../src', 'data', 'images.json'));
 
     response.writeHead(200);
     response.write(JSON.stringify(json));
