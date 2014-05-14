@@ -5,14 +5,19 @@ html {
   line-height: 1.4;
 }
 
-.content {
+#regex-test-result {
+  color: purple;
+  font-size: 2rem;
+}
+
+#regex-test-content {
   border: 1px solid #999;
-  height: 400px;
-  width: 800px;
+  height: 300px;
+  width: 600px;
   padding: 10px;
 }
 
-.content::selection {
+#regex-test-content::selection {
   background-color: maroon;
   color: white;
 }
