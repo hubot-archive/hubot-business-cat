@@ -13,7 +13,7 @@
   "brain dump",
   "burn rate",
   "burn platform",
-  "\bbuy(\\s|-)in",
+  "(\\W|^)buy(\\s|-)in",
   "care and feeding",
   "change (agent|management)",
   "circle the wagons",
