@@ -17,7 +17,7 @@
 #   Morgan Wigmanich <okize123@gmail.com> (https://github.com/okize)
 
 images = require './data/images.json'
-jargon = require './data/business-jargon.json'
+jargon = require './data/triggers.json'
 regex = new RegExp jargon.join('|'), 'gi'
 
 module.exports = (robot) ->
