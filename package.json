@@ -1,6 +1,6 @@
 {
   "name": "hubot-business-cat",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Hubot script that displays `business cat` images",
   "main": "index.coffee",
   "author": {
