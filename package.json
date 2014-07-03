@@ -17,7 +17,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "test": "script/test"
+    "test": "script/test",
+    "start": "node ./test/server.js"
   },
   "homepage": "https://github.com/okize/hubot-business-cat/",
   "repository": {
