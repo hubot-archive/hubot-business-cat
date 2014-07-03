@@ -1,17 +1,14 @@
-var http = require('http'),
-    url = require('url'),
-    path = require('path'),
-    fs = require('fs'),
-    port = process.argv[2] || 8888;
+var http = require('http');
+var url = require('url');
+var path = require('path');
+var fs = require('fs');
+var port = parseInt(process.argv[2], 10) || 8888;
+var pak = require(path.join(__dirname, '..', 'package.json'));
+var json = require(path.join(__dirname, '..', 'src', 'data', 'images.json'));
 
 http.createServer(function(request, response) {
 
-  var uri = url.parse(request.url).pathname,
-      filename = path.join(process.cwd(), uri);
-
-  if (uri === '/images.json') {
-
-    var json = require(path.join(process.cwd(), '../src', 'data', 'images.json'));
+  if (url.parse(request.url).pathname === '/images.json') {
 
     response.writeHead(200);
     response.write(JSON.stringify(json));
@@ -19,33 +16,19 @@ http.createServer(function(request, response) {
 
   } else {
 
-    fs.exists(filename, function(exists) {
-
-      if(!exists) {
-        response.writeHead(404, {'Content-Type': 'text/plain'});
-        response.write('404 Not Found\n');
-        response.end();
-        return;
+    fs.readFile(path.join(__dirname, 'index.html'), function(error, content) {
+      if (error) {
+        response.writeHead(500);
+        response.end(error);
       }
-
-      if (fs.statSync(filename).isDirectory()) filename += '/index.html';
-
-      fs.readFile(filename, 'binary', function(err, file) {
-        if(err) {
-          response.writeHead(500, {'Content-Type': 'text/plain'});
-          response.write(err + '\n');
-          response.end();
-          return;
-        }
-
-        response.writeHead(200);
-        response.write(file, 'binary');
-        response.end();
-      });
+      else {
+        response.writeHead(200, { 'Content-Type': 'text/html' });
+        response.end(content, 'utf-8');
+      }
     });
 
   }
 
-}).listen(parseInt(port, 10));
+}).listen(port);
 
-console.log('Static file server running at\n  => http://localhost:' + port + '/\nCTRL + C to shutdown');
+console.log('View images for ' + pak.name + ' at http://localhost:' + port);
