@@ -1,4 +1,7 @@
-[![NPM version](https://badge.fury.io/js/hubot-business-cat.png)](http://badge.fury.io/js/hubot-business-cat) [![NPM version](https://david-dm.org/okize/hubot-business-cat.png)](https://david-dm.org/okize/hubot-business-cat) [![Build Status](https://secure.travis-ci.org/okize/hubot-business-cat.png)](http://travis-ci.org/okize/hubot-business-cat)
+[![NPM version](http://img.shields.io/npm/v/hubot-business-cat.svg?style=flat)](https://www.npmjs.org/package/hubot-business-cat)
+[![Build Status](http://img.shields.io/travis/okize/hubot-business-cat.svg?style=flat)](https://travis-ci.org/okize/hubot-business-cat)
+[![Dependency Status](http://img.shields.io/david/okize/hubot-business-cat.svg?style=flat)](https://david-dm.org/okize/hubot-business-cat)
+[![Downloads](http://img.shields.io/npm/dm/hubot-business-cat.svg?style=flat)](https://www.npmjs.org/package/hubot-business-cat)
 
 # Hubot: Business Cat
 
@@ -14,7 +17,6 @@ Run the following command to install this module as a Hubot dependency
 $ npm install hubot-business-cat --save
 ```
 
-
 Confirm that `hubot-business-cat` appears as a dependency in your Hubot `package.json` file.
 
 ```javascript
@@ -24,7 +26,6 @@ Confirm that `hubot-business-cat` appears as a dependency in your Hubot `package
   "hubot-business-cat": "1.0.x"
 }
 ```
-
 
 To enable the script, add the `hubot-business-cat` entry to the `external-scripts.json` file (you may need to create this file).
 ```
