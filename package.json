@@ -29,7 +29,7 @@
     "url": "https://github.com/okize/hubot-business-cat/issues"
   },
   "dependencies": {
-    "coffee-script": "1.6.x"
+    "coffee-script": "1.8.x"
   },
   "devDependencies": {
     "mocha": "1.20.x",
