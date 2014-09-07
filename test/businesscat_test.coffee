@@ -4,27 +4,23 @@ chai.use require 'sinon-chai'
 
 expect = chai.expect
 
-describe 'Business Cat:', ->
-  businesscat_module = require('../src/businesscat')
-
+describe 'hubot-business-cat', ->
   beforeEach ->
     @robot =
       respond: sinon.spy()
       hear: sinon.spy()
-    @msg =
-      send: sinon.spy()
-      random: sinon.spy()
-    @businesscat_module = businesscat_module(@robot)
+    # @msg =
+    #   send: sinon.spy()
+    #   random: sinon.spy()
+    @businesscat_module = require('../src/businesscat')(@robot)
 
-  describe 'summon a business cat', ->
+  it 'registers a hear listener', ->
+    expect(@robot.hear).to.have.been.calledWith(/bottom line/)
 
-    it 'should register a hear listener', ->
-      expect(@robot.hear).to.have.been.calledWith(/we should create a strategic partnership/)
+  # it 'does NOT register a hear listener', ->
+  #   expect(@robot.hear).to.not.have.been.calledWith(/cooper seem/)
 
-    # it 'should NOT register a hear listener', ->
-    #   expect(@robot.hear).not.to.have.been.calledWith(/cooper seem/)
-
-    # it 'should return an image url', ->
-    #   cb = @robot.respond.firstCall.args[1]
-    #   cb(@msg)
-    #   expect(@msg.send).to.have.been.calledWithMatch(/*.jpg/)
+  # it 'should return an image url', ->
+  #   cb = @robot.respond.firstCall.args[1]
+  #   cb(@msg)
+  #   expect(@msg.send).to.have.been.calledWithMatch(/*.jpg/)
