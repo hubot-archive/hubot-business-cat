@@ -3,11 +3,7 @@
   "version": "1.1.0",
   "description": "Hubot script that displays `business cat` images",
   "main": "index.coffee",
-  "author": {
-    "name": "Morgan Wigmanich",
-    "email": "okize123@gmail.com",
-    "url": "https://github.com/okize"
-  },
+  "author": "Morgan Wigmanich <okize123@gmail.com> (https://github.com/okize)",
   "keywords": [
     "hubot",
     "hubot-scripts",
