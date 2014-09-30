@@ -1,6 +1,6 @@
 [![NPM version](http://img.shields.io/npm/v/hubot-business-cat.svg?style=flat)](https://www.npmjs.org/package/hubot-business-cat)
-[![Build Status](http://img.shields.io/travis/okize/hubot-business-cat.svg?style=flat)](https://travis-ci.org/okize/hubot-business-cat)
-[![Dependency Status](http://img.shields.io/david/okize/hubot-business-cat.svg?style=flat)](https://david-dm.org/okize/hubot-business-cat)
+[![Build Status](http://img.shields.io/travis/hubot-scripts/hubot-business-cat.svg?style=flat)](https://travis-ci.org/hubot-scripts/hubot-business-cat)
+[![Dependency Status](http://img.shields.io/david/hubot-scripts/hubot-business-cat.svg?style=flat)](https://david-dm.org/hubot-scripts/hubot-business-cat)
 [![Downloads](http://img.shields.io/npm/dm/hubot-business-cat.svg?style=flat)](https://www.npmjs.org/package/hubot-business-cat)
 
 # Hubot: Business Cat
