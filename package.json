@@ -16,13 +16,13 @@
     "test": "script/test",
     "start": "node ./test/server.js"
   },
-  "homepage": "https://github.com/okize/hubot-business-cat/",
+  "homepage": "https://github.com/hubot-scripts/hubot-business-cat/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/okize/hubot-business-cat.git"
+    "url": "https://github.com/hubot-scripts/hubot-business-cat.git"
   },
   "bugs": {
-    "url": "https://github.com/okize/hubot-business-cat/issues"
+    "url": "https://github.com/hubot-scripts/hubot-business-cat/issues"
   },
   "dependencies": {
     "coffee-script": "1.8.x"
