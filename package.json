@@ -14,7 +14,7 @@
   "license": "MIT",
   "scripts": {
     "test": "script/test",
-    "start": "node ./test/server.js"
+    "start": "coffee ./test/server.coffee"
   },
   "homepage": "https://github.com/hubot-scripts/hubot-business-cat/",
   "repository": {
