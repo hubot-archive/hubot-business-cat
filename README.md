@@ -7,7 +7,7 @@
 
 Business cat is summoned when business jargon is used
 
-![It's business time!](https://raw.github.com/okize/hubot-business-cat/gh-pages/animated-business-cat.gif)
+![It's business time!](https://raw.github.com/hubot-scripts/hubot-business-cat/gh-pages/animated-business-cat.gif)
 
 ## Installation
 
