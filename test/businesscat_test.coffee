@@ -9,18 +9,15 @@ describe 'hubot-business-cat', ->
     @robot =
       respond: sinon.spy()
       hear: sinon.spy()
-    # @msg =
-    #   send: sinon.spy()
-    #   random: sinon.spy()
-    @businesscat_module = require('../src/businesscat')(@robot)
 
-  it 'registers a hear listener', ->
-    expect(@robot.hear).to.have.been.calledWith(/bottom line/)
+    require('../src/businesscat')(@robot)
 
-  # it 'does NOT register a hear listener', ->
-  #   expect(@robot.hear).to.not.have.been.calledWith(/cooper seem/)
+  it 'does register a hear listener', ->
+    expect(@robot.hear).to.have.been.calledWithMatch sinon.match( (val) ->
+      val.test /per se/
+    )
 
-  # it 'should return an image url', ->
-  #   cb = @robot.respond.firstCall.args[1]
-  #   cb(@msg)
-  #   expect(@msg.send).to.have.been.calledWithMatch(/*.jpg/)
+  it 'does NOT register a hear listener', ->
+    expect(@robot.hear).to.not.have.been.calledWith sinon.match( (val) ->
+      val.test /cooper seem/
+    )
