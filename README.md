@@ -17,17 +17,7 @@ Run the following command to install this module as a Hubot dependency
 $ npm install hubot-business-cat --save
 ```
 
-Confirm that `hubot-business-cat` appears as a dependency in your Hubot `package.json` file.
-
-```javascript
-"dependencies": {
-  "hubot":              "2.x",
-  "hubot-scripts":      "2.x",
-  "hubot-business-cat": "1.0.x"
-}
-```
-
-To enable the script, add the `hubot-business-cat` entry to the `external-scripts.json` file (you may need to create this file).
+Add the **hubot-business-cat** to your `external-scripts.json` (you may need to create this file).
 ```
   ["hubot-business-cat"]
 ```
