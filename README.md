@@ -18,6 +18,7 @@ $ npm install hubot-business-cat --save
 ```
 
 Add the **hubot-business-cat** to your `external-scripts.json` (you may need to create this file).
+
 ```
-  ["hubot-business-cat"]
+["hubot-business-cat"]
 ```
