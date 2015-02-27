@@ -79,7 +79,7 @@
   "return on investment",
   "robust",
   "rock star",
-  "ROI",
+  "\\bROI\\b",
   "rubber (hits|meets) the road",
   "share of wallet",
   "solutioning",
