@@ -1,6 +1,6 @@
 {
   "name": "hubot-business-cat",
-  "version": "1.1.14",
+  "version": "1.1.15",
   "description": "Hubot script that displays `business cat` images",
   "main": "index.coffee",
   "author": "Morgan Wigmanich <okize123@gmail.com> (https://github.com/okize)",
