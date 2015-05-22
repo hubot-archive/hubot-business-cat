@@ -14,7 +14,7 @@
   "license": "MIT",
   "scripts": {
     "test": "script/test",
-    "start": "coffee ./test/server.coffee"
+    "start": "coffee ./example/server.coffee"
   },
   "homepage": "https://github.com/hubot-scripts/hubot-business-cat/",
   "repository": {
@@ -25,7 +25,7 @@
     "url": "https://github.com/hubot-scripts/hubot-business-cat/issues"
   },
   "dependencies": {
-    "coffee-script": "~1.9.0"
+    "coffee-script": "^1.9.0"
   },
   "devDependencies": {
     "mocha": "1.21.x",
