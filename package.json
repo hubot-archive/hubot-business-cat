@@ -28,9 +28,9 @@
     "coffee-script": "^1.9.0"
   },
   "devDependencies": {
-    "mocha": "1.21.x",
-    "chai": "1.9.x",
-    "sinon-chai": "2.5.x",
-    "sinon": "1.10.x"
+    "chai": "^1.9.0",
+    "mocha": "^1.21.0",
+    "sinon": "^1.10.0",
+    "sinon-chai": "^2.5.0"
   }
 }
