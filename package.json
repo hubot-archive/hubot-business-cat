@@ -30,7 +30,6 @@
   "devDependencies": {
     "chai": "^1.9.0",
     "express": "^4.12.4",
-    "finalhandler": "^0.3.6",
     "mocha": "^1.21.0",
     "serve-static": "^1.9.3",
     "sinon": "^1.10.0",
