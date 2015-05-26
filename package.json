@@ -31,7 +31,6 @@
     "chai": "^1.9.0",
     "express": "^4.12.4",
     "mocha": "^1.21.0",
-    "serve-static": "^1.9.3",
     "sinon": "^1.10.0",
     "sinon-chai": "^2.5.0"
   }
