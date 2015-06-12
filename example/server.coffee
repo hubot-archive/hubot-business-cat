@@ -11,4 +11,5 @@ app = express()
 app.use(morgan('dev'))
 app.use(express.static(staticDirectory))
 app.get '/images.json',  (req, res) -> res.send(JSON.stringify(imageList))
+app.get '/triggers.json',  (req, res) -> res.send(JSON.stringify(triggerList))
 app.listen port, -> console.log "\n #{pak.name} @ http://localhost:#{port}"
