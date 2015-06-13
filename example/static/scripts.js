@@ -9,11 +9,11 @@ $.getJSON('images.json', function (images) {
 });
 
 // load triggers ajaxily and check text for trigger words
-$.getJSON('triggers.json', function (jargon) {
+$.getJSON('triggers.json', function (triggers) {
 
   var checktext = function (str) {
     var arr = [], regex;
-    jargon.forEach( function(re) {
+    triggers.forEach( function(re) {
       regex = (new RegExp(re));
       if (str.match(regex) !== null) {
         arr.push(str.match(regex)[0]);
@@ -30,9 +30,9 @@ $.getJSON('triggers.json', function (jargon) {
       var text = $content.html();
       var results = checktext(text);
       if (results.length > 0) {
-        $result.html('Business jargon: <strong>' + results.join(', ') + '</strong>');
+        $result.html('Triggers: <strong>' + results.join(', ') + '</strong>');
       } else {
-        $result.html('No business jargon found');
+        $result.html('No triggers found');
       }
 
     }
