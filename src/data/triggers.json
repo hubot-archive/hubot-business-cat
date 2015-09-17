@@ -18,7 +18,7 @@
   "(\\W|^)buy(\\s?|-)in(\\W|$)",
   "care and feeding",
   "change (agent|management)",
-  "circle the wagons",
+  "circle (back|the wagons)",
   "client(\\s|-)facing",
   "come to jesus moment",
   "content marketing",
@@ -58,6 +58,7 @@
   "low hanging fruit",
   "make hay",
   "manag(e|ing) (expectations|perceptions)",
+  "market share",
   "move the (goal posts|needle|ball down the field)",
   "net( |-)(net|new)",
   "north(\\s|-)south",
@@ -70,6 +71,7 @@
   "outsource",
   "over the wall",
   "overseas",
+  "own the market",
   "paradigm",
   "peel the onion",
   "(\\W|^)per se(\\W|$)",
@@ -105,6 +107,7 @@
   "topicjacking",
   "total quality",
   "touch(|ing) (base|points)",
+  "upmarket",
   "value (add|proposition)",
   "verb(iage|age)"
 ]
