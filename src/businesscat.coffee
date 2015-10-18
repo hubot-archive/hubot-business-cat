@@ -10,7 +10,7 @@
 # Commands:
 #   business jargon - summons business cat
 #
-# Notes
+# Notes:
 #   See jargon array for list of trigger phrases
 #
 # Author:
