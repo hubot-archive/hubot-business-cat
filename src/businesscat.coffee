@@ -5,10 +5,10 @@
 #   None
 #
 # Configuration:
-#   None
+#   HUBOT_BUSINESS_CAT_JARGON comma-separated list of additional "tiggers"
 #
 # Commands:
-#   business jargon - summons business cat
+#   Business jargon - summons business cat
 #
 # Notes:
 #   See jargon array for list of trigger phrases
@@ -18,6 +18,11 @@
 
 images = require './data/images.json'
 jargon = require './data/triggers.json'
+
+if process.env.HUBOT_BUSINESS_CAT_JARGON?
+  additionalJargon = (process.env.HUBOT_BUSINESS_CAT_JARGON).split(',')
+  jargon = jargon.concat(additionalJargon)
+
 regex = new RegExp jargon.join('|'), 'gi'
 
 module.exports = (robot) ->
