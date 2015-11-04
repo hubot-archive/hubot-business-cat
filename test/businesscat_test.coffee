@@ -14,10 +14,10 @@ describe 'hubot-business-cat', ->
 
   it 'does register a hear listener', ->
     expect(@robot.hear).to.have.been.calledWithMatch sinon.match( (val) ->
-      val.test /per se/
+      val.test 'per se'
     )
 
   it 'does NOT register a hear listener', ->
     expect(@robot.hear).to.not.have.been.calledWith sinon.match( (val) ->
-      val.test /cooper seem/
+      val.test 'cooper seem'
     )

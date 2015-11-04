@@ -23,7 +23,7 @@ if process.env.HUBOT_BUSINESS_CAT_JARGON?
   additionalJargon = (process.env.HUBOT_BUSINESS_CAT_JARGON).split(',')
   jargon = jargon.concat(additionalJargon)
 
-regex = new RegExp jargon.join('|'), 'gi'
+regex = new RegExp "\\b(#{jargon.join('|')})\\b", 'gi'
 
 module.exports = (robot) ->
   robot.hear regex, (msg) ->
