@@ -27,10 +27,12 @@ removeTerm = (term, arrayToDeleteFrom) ->
 
 if process.env.HUBOT_BUSINESS_CAT_JARGON?
   additionalJargon = (process.env.HUBOT_BUSINESS_CAT_JARGON).split(',')
-  omittedJargon = (process.env.HUBOT_BUSINESS_CAT_OMITTED_JARGON).split(',')
   jargon = jargon.concat(additionalJargon)
+
+if process.env.HUBOT_BUSINESS_CAT_OMITTED_JARGON?
+  omittedJargon = (process.env.HUBOT_BUSINESS_CAT_OMITTED_JARGON).split(',')
   jargon = removeTerm(term, jargon) for term in omittedJargon
-  
+
 regex = new RegExp jargon.join('|'), 'gi'
 
 module.exports = (robot) ->
