@@ -15,8 +15,8 @@
 #
 # Author:
 #   Morgan Wigmanich <okize123@gmail.com> (https://github.com/okize)
-
-images = require './data/images.json'
+urlEncode = require('urlencode')
+phrases = require './data/phrases.json'
 jargon = require './data/triggers.json'
 
 if process.env.HUBOT_BUSINESS_CAT_JARGON?
@@ -27,4 +27,7 @@ regex = new RegExp jargon.join('|'), 'gi'
 
 module.exports = (robot) ->
   robot.hear regex, (msg) ->
-    msg.send msg.random images
+    phrase = msg.random phrases
+    thing = phrase.split "|"
+    url = "http://urlme.me/business/#{urlEncode(thing[0])}/#{urlEncode(thing[1])}"
+    msg.send url
