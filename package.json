@@ -25,7 +25,8 @@
     "url": "https://github.com/hubot-scripts/hubot-business-cat/issues"
   },
   "dependencies": {
-    "coffee-script": "^1.9.0"
+    "coffee-script": "^1.9.0",
+    "urlencode": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^2.0.0",
