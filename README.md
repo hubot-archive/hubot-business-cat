@@ -25,8 +25,9 @@ Add the **hubot-business-cat** to your `external-scripts.json` (you may need to 
 
 ## Configuration
 
-If you would like business jargon triggers that are not in the plugin, [pull requests](https://github.com/hubot-scripts/hubot-business-cat/pulls) are welcome. Additionally, the environment variable HUBOT_BUSINESS_CAT_JARGON can be used with a comma-separated list to extend the triggers, like so:
+If you would like business jargon triggers that are not in the plugin, [pull requests](https://github.com/hubot-scripts/hubot-business-cat/pulls) are welcome. Additionally, the environment variables HUBOT_BUSINESS_CAT_JARGON and HUBOT_BUSINESS_CAT_OMITTED_JARGON can be used with a comma-separated list to extend or reduce the triggers, like so:
 
 ```
 HUBOT_BUSINESS_CAT_JARGON='more,jargon,ideat(e|ion)'
+HUBOT_BUSINESS_CAT_OMITTED_JARGON='in the loop,takeaway'
 ```

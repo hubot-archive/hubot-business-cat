@@ -6,6 +6,7 @@
 #
 # Configuration:
 #   HUBOT_BUSINESS_CAT_JARGON comma-separated list of additional "tiggers"
+#   HUBOT_BUSINESS_CAT_OMITTED_JARGON comma-separated list of triggers to ignore
 #
 # Commands:
 #   Business jargon - summons business cat
