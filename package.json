@@ -14,7 +14,7 @@
   "license": "MIT",
   "scripts": {
     "test": "script/test || true",
-    "start": "./node_modules/.bin/nodemon ./example/server.coffee"
+    "start": "nodemon ./example/server.coffee"
   },
   "homepage": "https://github.com/hubot-scripts/hubot-business-cat/",
   "repository": {
@@ -28,7 +28,7 @@
     "coffee-script": "^1.9.0"
   },
   "devDependencies": {
-    "chai": "^2.0.0",
+    "chai": "^3.0.0",
     "express": "^4.12.4",
     "mocha": "^2.0.0",
     "morgan": "^1.5.3",
