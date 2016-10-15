@@ -87,6 +87,7 @@
   "paradigm",
   "peel (|back\\s)the onion",
   "(\\W|^)per se(\\W|$)",
+  "(pie|bar|line|scatter) (chart|graph)",
   "pilot (program|project)",
   "(\\W|^)ping me(\\W|$)",
   "in the pipeline",
