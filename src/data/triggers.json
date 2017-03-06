@@ -19,7 +19,7 @@
   "burn platform",
   "burn rate",
   "business value",
-  "business development manager"
+  "business development manager",
   "(\\W|^)buy(\\s?|-)in(\\W|$)",
   "care and feeding",
   "change (agent|management)",
