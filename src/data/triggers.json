@@ -84,7 +84,7 @@
   "out of (pocket|the loop)",
   "out(side|\\sof) the box",
   "out of (|the )office",
-  "ooo",
+  "\\booo\\b",
   "outsource",
   "over the wall",
   "overseas",
