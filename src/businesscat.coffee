@@ -36,6 +36,8 @@ if process.env.HUBOT_BUSINESS_CAT_OMITTED_JARGON?
 
 regex = new RegExp jargon.join('|'), 'gi'
 
-module.exports = (robot) ->
+exports = module.exports = (robot) ->
   robot.hear regex, (msg) ->
     msg.send msg.random images
+
+exports.removeTerm = removeTerm
