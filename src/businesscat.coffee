@@ -24,7 +24,7 @@ removeTerm = (term, arrayToDeleteFrom) ->
   index = arrayToDeleteFrom.indexOf term
   if index > -1
     arrayToDeleteFrom.splice index, 1
-    return arrayToDeleteFrom
+  arrayToDeleteFrom
 
 if process.env.HUBOT_BUSINESS_CAT_JARGON?
   additionalJargon = (process.env.HUBOT_BUSINESS_CAT_JARGON).split(',')
