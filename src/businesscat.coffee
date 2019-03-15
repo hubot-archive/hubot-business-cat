@@ -24,7 +24,7 @@ removeTerm = (term, arrayToDeleteFrom) ->
   index = arrayToDeleteFrom.indexOf term
   if index > -1
     arrayToDeleteFrom.splice index, 1
-    return arrayToDeleteFrom
+  arrayToDeleteFrom
 
 if process.env.HUBOT_BUSINESS_CAT_JARGON?
   additionalJargon = (process.env.HUBOT_BUSINESS_CAT_JARGON).split(',')
@@ -36,6 +36,8 @@ if process.env.HUBOT_BUSINESS_CAT_OMITTED_JARGON?
 
 regex = new RegExp jargon.join('|'), 'gi'
 
-module.exports = (robot) ->
+exports = module.exports = (robot) ->
   robot.hear regex, (msg) ->
     msg.send msg.random images
+
+exports.removeTerm = removeTerm
