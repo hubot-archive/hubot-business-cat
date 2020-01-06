@@ -34,10 +34,17 @@ if process.env.HUBOT_BUSINESS_CAT_OMITTED_JARGON?
   omittedJargon = (process.env.HUBOT_BUSINESS_CAT_OMITTED_JARGON).split(',')
   jargon = removeTerm(term, jargon) for term in omittedJargon
 
+if process.env.HUBOT_BUSINESS_CAT_FREQUENCY? > 0
+  frequency = (process.env.HUBOT_BUSINESS_CAT_OMITTED_JARGON)
+else
+  frequency = 1
+
 regex = new RegExp jargon.join('|'), 'gi'
 
 exports = module.exports = (robot) ->
   robot.hear regex, (msg) ->
-    msg.send msg.random images
+    if !(Math.floor(Math.random() * Math.floor(frequency)))
+      msg.send msg.random images
 
 exports.removeTerm = removeTerm
+
