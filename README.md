@@ -31,3 +31,17 @@ If you would like business jargon triggers that are not in the plugin, [pull req
 HUBOT_BUSINESS_CAT_JARGON='more,jargon,ideat(e|ion)'
 HUBOT_BUSINESS_CAT_OMITTED_JARGON='in the loop,takeaway'
 ```
+
+If you think business cat triggers too often, you can also reduce the probability of a response by setting the variable HUBOT_BUSINESS_CAT_FREQUENCY to a positive integer value, giving a one-in-HUBOT_BUSINESS_CAT_FREQUENCY chance of replying.  if not set, this defaults to the existing 100% chance of a response.
+```
+# a 50% chance of responding:  (one of two)
+HUBOT_BUSINESS_CAT_FREQUENCY=2
+```
+```
+# a 25% chance of responding:  (one in four)
+HUBOT_BUSINESS_CAT_FREQUENCY=4
+```
+```
+# a 1% chance of responding:  (one in one-hundred)
+HUBOT_BUSINESS_CAT_FREQUENCY=100
+```

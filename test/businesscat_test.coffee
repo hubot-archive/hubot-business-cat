@@ -17,6 +17,7 @@ describe 'hubot-business-cat', ->
   afterEach ->
     delete process.env.HUBOT_BUSINESS_CAT_JARGON
     delete process.env.HUBOT_BUSINESS_CAT_OMITTED_JARGON
+    delete process.env.HUBOT_BUSINESS_CAT_FREQUENCY
 
   it 'does register a hear listener', ->
     expect(@robot.hear).to.have.been.calledWithMatch sinon.match( (val) ->
